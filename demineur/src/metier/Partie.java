@@ -18,7 +18,7 @@ public class Partie {
     
     private LocalDate heureDebut;
     private LocalDate heureFin;
-    private boolean gagner = false;
+    private boolean gagnee = false;
     
     private List<Case> cases = new ArrayList();
     private Miniteur miniteur;
@@ -96,12 +96,12 @@ public class Partie {
         this.heureFin = heureFin;
     }
 
-    public boolean isGagner() {
-        return gagner;
+    public boolean isGagnee() {
+        return gagnee;
     }
 
-    public void setGagner(boolean gagner) {
-        this.gagner = gagner;
+    public void setGagnee(boolean gagnee) {
+        this.gagnee = gagnee;
     }
 
     public List<Case> getCases() {
