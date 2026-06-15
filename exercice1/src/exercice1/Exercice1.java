@@ -48,7 +48,7 @@ public class Exercice1 {
         panelNord.setPreferredSize(new Dimension(0, 60));
         JLabel labelNord = new JLabel("Connecté : username");
         labelNord.setForeground(Color.WHITE);
-        labelNord.setFont(new Font("SansSerif", Font.PLAIN, 20));
+        labelNord.setFont(new Font("Sans Sérif", Font.PLAIN, 20));
         labelNord.setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 20));
         panelNord.add(labelNord, BorderLayout.EAST);
         
@@ -57,7 +57,7 @@ public class Exercice1 {
         panelCentre.setBackground(new Color(245, 245, 245));
         JLabel labelCentre = new JLabel("Titre de page 1");
         labelCentre.setBorder(BorderFactory.createEmptyBorder(15, 15, 10, 15));
-        labelCentre.setFont(new Font("SansSerif", Font.PLAIN, 26));
+        labelCentre.setFont(new Font("Sans Sérif", Font.PLAIN, 26));
         labelCentre.setForeground(Color.BLACK);
         panelCentre.add(labelCentre, BorderLayout.PAGE_START);
         
@@ -68,14 +68,14 @@ public class Exercice1 {
         panelOuest.setLayout(new BoxLayout(panelOuest, BoxLayout.Y_AXIS));
         panelOuest.setBackground(new Color(220, 220, 220));
         JLabel labelOuest = new JLabel("Menu");
-        labelOuest.setFont(new Font("SansSerif", Font.PLAIN, 30));
+        labelOuest.setFont(new Font("Sans Sérif", Font.PLAIN, 30));
         labelOuest.setBorder(BorderFactory.createEmptyBorder(15, 15, 10, 0));
         panelOuest.add(labelOuest);
         panelOuest.add(labelOuest, BorderLayout.WEST);
         
         for (int i=1; i<=5; i++) {
             JLabel item = new JLabel("Page "+ i);
-            item.setFont(new Font("SansSerif", Font.PLAIN, 22));
+            item.setFont(new Font("Sans Sérif", Font.PLAIN, 22));
             item.setBorder(BorderFactory.createEmptyBorder(3, 15, 0, 0));
             panelOuest.add(item);
         }
@@ -85,7 +85,7 @@ public class Exercice1 {
         panelSud.setBackground(new Color(201, 217, 247));
         panelSud.setPreferredSize(new Dimension(0, 60));
         JLabel labelSud = new JLabel("© copyright ...", SwingConstants.CENTER);
-        labelSud.setFont(new Font("SansSerif", Font.PLAIN, 28));
+        labelSud.setFont(new Font("Sans Sérif", Font.PLAIN, 28));
         labelSud.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
         labelSud.setForeground(new Color(90, 90, 90));
         panelSud.add(labelSud, BorderLayout.CENTER);
