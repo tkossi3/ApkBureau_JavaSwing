@@ -35,10 +35,11 @@ public class CaseUI extends JButton {
         if(this.caseMetier.isDevoilee()){
             if(this.caseMetier.isMinee()){
                 this.afficherMine();
-            } else {
-                this.afficherContenu();
             }
-        } else if(this.caseMetier.isMarquee()){
+            this.afficherContenu();
+            return;
+        }
+        if(this.caseMetier.isMarquee()){
             this.afficherDrapeau();
         } else {
             this.setIcon(null);

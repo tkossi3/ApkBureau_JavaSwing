@@ -52,7 +52,7 @@ public class Plateau extends JFrame {
         }
     }
 
-    public List<CaseUI> getCasesUIs() {
+    public List<CaseUI> getCaseUIs() {
         return casesUIs;
     }
     
