@@ -11,7 +11,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
-import presentation.UtilisateurUI;
+import presentation.controleur.UtilisateurControleur;
+import presentation.vue.UtilisateurUI;
 /**
  *
  * @author tkossi
@@ -23,9 +24,9 @@ public class Jdbc1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        UtilisateurUI utilisateurUI = new UtilisateurUI();
-        utilisateurUI.setVisible(true);
+        UtilisateurControleur utilisateurControleur = new UtilisateurControleur();
+//        utilisateurControleur.ajouter();
+        utilisateurControleur.modifier(30);
         
 //        connexionUtilisateurV3();
 //        Utilisateur u1 = new Utilisateur("user5", "123123");

@@ -6,7 +6,9 @@ package service;
 
 import dao.UtilisateurDao;
 import entite.Utilisateur;
+import java.sql.SQLException;
 import java.util.List;
+import util.ObjetNonTrouveException;
 
 /**
  *
@@ -21,11 +23,11 @@ public class UtilisatuerService {
     }
     
     public void ajouter (Utilisateur utilisateur){
-        
+        this.dao.ajouter(utilisateur);
     }
     
-    public Utilisateur trouver (int id){
-        return null;
+    public Utilisateur trouver (int id) throws ObjetNonTrouveException, SQLException{
+        return dao.trouver(id);
     }
     
     public Utilisateur trouver(String identifiant){
@@ -33,7 +35,7 @@ public class UtilisatuerService {
     }
     
     public Utilisateur modifier(Utilisateur utilisateur){
-        return null;
+        return dao.modifier(utilisateur);
     }
     
     public List<Utilisateur> lister(){
